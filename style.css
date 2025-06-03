@@ -1,0 +1,73 @@
+header {
+            background-color: #9A7AFF;
+            color: white;
+            display: flex;
+           padding-top: 2rem;
+           padding-left: 123px;
+           padding-right: 123px;
+           align-items: center;
+           justify-content: space-between;
+           
+        }
+        .header__logo{
+            font-size: 1.2rem;
+             font-weight: bold;
+            color: white;
+        }
+        .header__navigation-list {
+            display: flex;
+             gap: 1rem;
+             
+        }
+        .header__navigation-item {
+            
+             color: white;
+              font-weight: 500;
+             transition: color 0.3s ease;
+        }
+        h1,h2,h3,p{
+            color:#FFFFFF;
+        }
+        .container__main, .container__third {
+            background-color: #9A7AFF;
+        }
+        .container__second, .container__fourth{
+            background-color: #33C37E;
+        }
+      
+.button{
+    background-color: #33C37E;
+    height: 72px;
+    width: 169px;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 123px; 
+    padding: 0;      
+}
+
+.container__second__button{
+    background-color: #9A7AFF;
+}
+
+
+
+.container__main {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;     /* вертикальное выравнивание по центру */
+    justify-content: space-between; /* распределение между дочерними элементами */
+}
+
+.container__main__content {
+    flex: 1; /* занимает доступное пространство */
+    max-width: 500px; /* ограничение ширины текста */
+}
+
+.container__main__image {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}

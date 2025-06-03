@@ -1,0 +1,53 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Убираем стандартное оформление списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем стандартные стили ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Убираем стили для кнопок и форм */
+button, input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+/* Обнуляем таблицы */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Обнуляем изображения и видео */
+img, video, picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Убираем стили у фигур с подписями */
+figure {
+    margin: 0;
+}
+
+/* Убираем пробелы между инлайновыми блоками */
+body {
+    font-family: 'Manrope';
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
