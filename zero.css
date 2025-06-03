@@ -1,3 +1,4 @@
+/* ============ RESET CSS ============ */
 
 *, *::before, *::after {
     margin: 0;
@@ -46,8 +47,53 @@ figure {
 
 /* Убираем пробелы между инлайновыми блоками */
 body {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* Базовые стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Базовые стили для абзацев */
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Базовые стили для кнопок */
+button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2ECC71;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27AE60;
+}
+
+/* Базовый wrapper */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
