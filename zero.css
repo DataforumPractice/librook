@@ -90,10 +90,3 @@ button {
 button:hover {
     background-color: #27AE60;
 }
-
-/* Базовый wrapper */
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}

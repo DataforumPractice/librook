@@ -1,13 +1,29 @@
-header {
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+[class*="__conteiner"] {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.header {
     background-color: #9A7AFF;
     color: white;
     display: flex;
     padding-top: 2rem;
-    padding-left: 123px;
-    padding-right: 123px;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
 
+}
+
+.header__conteiner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -36,54 +52,103 @@ p {
     color: #FFFFFF;
 }
 
-.container__main,
-.container__third {
-    background-color: #9A7AFF;
+.title {
+    font-size: 49px;
+    font-weight: 800;
+    font-family: Inter;
 }
 
-.container__second,
-.container__fourth {
-    background-color: #33C37E;
+.text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
 }
+
+.main {
+    width: 100%;
+    background-color: #9A7AFF;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.main__image {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 600/400;
+    flex: 1 0 auto;
+    background-image: url(./img/books.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.main__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 
 .button {
     background-color: #33C37E;
     height: 72px;
     width: 169px;
     color: #FFFFFF;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 123px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
     padding: 0;
 }
 
-.container__second__button {
-    background-color: #9A7AFF;
+.pencil{
+    background-color: #33C37E;
+    width: 100%;  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.container__main {
-    background-color: #9A7AFF;
-    padding: 2rem 0;
+.pencil__conteiner{
     display: flex;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    gap: 32px;
+    justify-content: center;
 }
 
-.container__main__content {
-    max-width: 500px;
-    flex: 1 1 50%;
+.pencil__button{
+    background-color:#9A7AFF;
 }
 
-.container__main__image {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: flex-end;
+.pencil__image{
+    background-image: url(./img/pencil.png);
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 720/350;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.container__main__image img {
-    max-width: 100%;
-    height: auto;
+.pencil__title{
+    max-width: 720px;
 }
+
+.pencil__text{
+    max-width: 720px;
+}
+
+.swiper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
