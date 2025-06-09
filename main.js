@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
       spaceBetween: 30,
-      centeredSlides: true,
+      direction: 'horizontal', 
       grabCursor: true,
       pagination: {
         el: '.swiper-pagination',
