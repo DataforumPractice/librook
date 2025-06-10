@@ -1,0 +1,42 @@
+.pencil {
+    background-color: #33C37E;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.pencil__conteiner {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+.pencil__button {
+    background-color: #9A7AFF;
+
+    &:hover {
+        background-color: #6b4fc6;
+    }
+}
+
+.pencil__image {
+    background-image: url(../../img/pencil.png);
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 720/350;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pencil__title {
+    max-width: 720px;
+}
+
+.pencil__text {
+    max-width: 720px;
+}

@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    background-color: #9A7AFF;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main__image {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 600/400;
+    flex: 1 0 auto;
+    background-image: url(../../img/books.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.main__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

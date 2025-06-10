@@ -1,0 +1,77 @@
+.slayder {
+    width: 100%;
+    min-height: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9A7AFF;
+    gap: 64px;
+    
+}
+
+
+.slayder__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 100vw;
+    overflow: visible;
+}
+
+.swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+   margin-left: 0;
+    background-color:#9A7AFF;
+    padding: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 520px;
+    gap: 32px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    pointer-events: auto;
+}
+
+.slayder__image-list {
+    background-image: url(../../img/list.png);
+}
+
+.slayder__image-papers {
+    background-image: url(../../img/papers.png);
+}
+
+.slayder__image-calendar {
+    background-image: url(../../img/calendar.png);
+}
+
+[class*="slayder__image"] {
+    width: 100%;
+    max-width: 455px;
+    aspect-ratio: 455/255;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+.swiper-slide-active{
+    background-color: #fff;
+
+}
+.swiper-slide-active .title{
+    color: #9A7AFF;
+}
+
+.swiper-slide-active .text{
+    color: #9A7AFF;
+}
+
+.swiper-wrapper {
+    width: max-content;
+    display: flex;
+}

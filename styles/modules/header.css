@@ -1,0 +1,33 @@
+.header {
+    background-color: #9A7AFF;
+    color: white;
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+
+}
+
+.header__conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    font-family: Rowdies;
+}
+
+.header__navigation-list {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.header__navigation-item {
+
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
