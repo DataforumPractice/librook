@@ -1,0 +1,28 @@
+[class*="__cloud"] {
+    width: 100%;
+    
+    position: absolute;
+    max-width: 610px;
+    aspect-ratio: 612/232;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__cloud {
+    top: 100px;
+    right: -350px;
+    background-image: url(../../img/cloud_main.svg);
+}
+
+.pencil__cloud{
+    top: 950px;
+    left: -300px;
+    background-image: url(../../img/cloud_pencil.svg);
+}
+
+.swiper__cloud{
+    top: 3150px;
+    left: -350px;
+    background-image: url(../../img/cloud__swiper.svg);
+}
