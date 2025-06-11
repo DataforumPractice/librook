@@ -26,3 +26,10 @@
     left: -350px;
     background-image: url(../../img/cloud__swiper.svg);
 }
+
+@media (max-width: 770px) {
+    [class*="__cloud"] {
+    display: none;
+}
+
+}

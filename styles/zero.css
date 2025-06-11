@@ -101,3 +101,27 @@ p {
 button:hover {
     background-color: #27AE60;
 }
+
+main, section {
+    position: relative;
+}
+
+@media (max-width: 770px) {
+    .title {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;
+
+}
+.button {
+    font-weight: 700;
+    font-size: 15px;
+    height: 56px;
+    width: 130px;
+}
+
+}

@@ -40,3 +40,13 @@
 .pencil__text {
     max-width: 720px;
 }
+
+@media (max-width: 770px) {
+    .pencil__conteiner {
+        padding: 15px;
+    }
+
+    .pencil {
+        min-height: initial;
+    }
+}

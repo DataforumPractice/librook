@@ -1,14 +1,25 @@
 export const swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
+    slidesPerView: "auto",
+    autoHeight: true,
     spaceBetween: 32,
     grabCursor: true,
+    allowTouchMove: true,
+    watchOverflow: true,
 
-    // Отступы для симметрии
+    // Твои любимые отступы
+    
     slidesOffsetBefore: calculateOffset(),
     slidesOffsetAfter: calculateOffset(),
 
-    watchOverflow: true,
-    allowTouchMove: false, // ← отключаем автоматическое изменение activeIndex
+    on: {
+        init: function () {
+            addHoverListeners(this);
+        },
+        resize: function () {
+            updateOffsets(this);
+            addHoverListeners(this);
+        }
+    }
 });
 
 // Функция для расчёта отступов
@@ -18,18 +29,18 @@ function calculateOffset() {
     return (window.innerWidth - containerWidth) / 2;
 }
 
-function updateOffsets() {
+// Обновление отступов при изменении размера экрана
+function updateOffsets(swiperInstance) {
     const newOffset = calculateOffset();
-    swiper.params.slidesOffsetBefore = newOffset;
-    swiper.params.slidesOffsetAfter = newOffset;
-    swiper.update();
+    
+    swiperInstance.params.slidesOffsetBefore = newOffset;
+    swiperInstance.params.slidesOffsetAfter = newOffset;
+    swiperInstance.update(); // Перерисовка
 }
 
-window.addEventListener('resize', updateOffsets);
 
-// Делаем слайд активным при наведении
-document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
-    slide.addEventListener('mouseenter', () => {
-        swiper.slideTo(index, 300); // 300 — скорость анимации в мс
-    });
+window.addEventListener('resize', () => {
+    if (swiper && swiper.initialized) {
+        updateOffsets(swiper);
+    }
 });

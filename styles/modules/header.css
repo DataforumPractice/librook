@@ -31,3 +31,14 @@
     font-weight: 500;
     transition: color 0.3s ease;
 }
+
+@media (max-width: 770px) {
+    .header__navigation-list {
+        gap: 5px;
+
+    }
+
+    .header__navigation-item {
+        font-size: 14px;
+    }
+}
