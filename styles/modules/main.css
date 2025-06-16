@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.main__content {
+.main__conteiner {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -32,14 +32,14 @@
 }
 
 @media (max-width: 770px) {
-    .main__content {
+    .main__conteiner {
         flex-direction: column-reverse;
         padding: 24px;
     }
 }
 
 @media (max-width: 990px) {
-    .main__content {
+    .main__conteiner {
         flex-direction: column-reverse;
         padding: 24px;
     }

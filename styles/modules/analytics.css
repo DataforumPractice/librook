@@ -1,25 +1,19 @@
-.analytics__image-book {
+.card__image.--book{
     background-image: url(../../img/book.png);
     width: 100%;
     max-width: 300px;
     aspect-ratio: 300/170;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.analytics__image-comp {
+.card__image.--comp{
     background-image: url(../../img/comp.png);
-    width: 100%;
-    max-width: 235px;
-    aspect-ratio: 235/165;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.analytics__image-head {
+.card__image.--head {
     background-image: url(../../img/headphone.png);
+}
+
+.card__image{
     width: 100%;
     max-width: 235px;
     aspect-ratio: 235/165;
@@ -47,7 +41,7 @@
 
 
 
-[class*="__block"] {
+[class*="__card"] {
     background-color: #fff;
 }
 
@@ -70,7 +64,7 @@
     background-color: #33C37E;
 }
 
-.row__block {
+.analytics__card.--single {
     width: 340px;
     aspect-ratio: 350/480;
     display: flex;
@@ -80,7 +74,7 @@
     padding: 24px;
 }
 
-.column__block {
+.analytics__card {
     width: 760px;
     aspect-ratio: 760/230;
     display: flex;
@@ -89,21 +83,21 @@
     align-items: center;
 }
 
-.analytics__title {
+.card__title {
     font-size: 22px;
     font-weight: 800;
     font-family: Manrope;
     color: #000;
 }
 
-.analytics__text {
+.card__text {
     font-size: 15px;
     font-weight: 400;
     font-family: Manrope;
     color: black;
 }
 
-.analytics__button {
+.card__button {
     min-width: 169px;
     height: 72px;
 }
@@ -117,7 +111,7 @@
         align-items: center;
     }
 
-    .column__block {
+    .analytics__card {
         flex-direction: column;
         width: 340px;
         gap: 25px;
@@ -129,12 +123,12 @@
         padding: 15px;
     }
 
-    .analytics__title {
+    .card__title {
         font-size: 20px;
         font-weight: 800;
     }
 
-    .analytics__text {
+    .card__text {
         font-size: 15px;
         font-weight: 400;
     }
@@ -155,7 +149,7 @@
         width: 100%;
     }
 
-    .column__block {
+    .analytics__card {
         flex-direction: column;
         width: 100%;
         gap: 25px;
@@ -167,7 +161,7 @@
         padding: 15px;
     }
 
-    .row__block {
+    .analytics__card.--single {
         width: 100%;
         height: 480px;
         display: flex;

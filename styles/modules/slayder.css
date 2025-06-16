@@ -61,15 +61,15 @@
 
 
 
-.slayder__image-list {
+.--list {
     background-image: url(../../img/list.png);
 }
 
-.slayder__image-papers {
+.--papers {
     background-image: url(../../img/papers.png);
 }
 
-.slayder__image-calendar {
+.--calendar {
     background-image: url(../../img/calendar.png);
 }
 

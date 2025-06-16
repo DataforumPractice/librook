@@ -19,13 +19,13 @@
     font-family: Rowdies;
 }
 
-.header__navigation-list {
+.header__nav-list {
     display: flex;
     gap: 1rem;
 
 }
 
-.header__navigation-item {
+.nav__item {
 
     color: white;
     font-weight: 500;
@@ -33,12 +33,12 @@
 }
 
 @media (max-width: 770px) {
-    .header__navigation-list {
+    .header__nav-list {
         gap: 5px;
 
     }
 
-    .header__navigation-item {
+    .nav__item {
         font-size: 14px;
     }
 }
