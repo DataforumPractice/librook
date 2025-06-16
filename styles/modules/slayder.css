@@ -6,6 +6,7 @@
     justify-content: center;
     background-color: #9A7AFF;
     gap: 64px;
+    z-index: 2;
 
 }
 
@@ -22,6 +23,7 @@
     max-width: 100vw;
     overflow: visible;
     height: 100% !important;
+
 }
 
 .swiper-wrapper {
@@ -43,18 +45,18 @@
     border: 1px solid #fff;
     pointer-events: auto;
     transition: all .2s linear !important;
-    
+
     &:hover {
         background-color: #fff;
         scale: 1.05;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        
+
         & .title,
         & .text {
             color: #9A7AFF;
         }
     }
-    
+
 }
 
 

@@ -42,16 +42,20 @@
     display: flex;
     justify-content: center;
     background-color: #33C37E;
+    z-index: 1;
 }
 
 
 
-[class*="analytics__block"] {
+[class*="__block"] {
     background-color: #fff;
 }
 
-.analytics__block {
+.row{
     display: flex;
+}
+
+.analytics__row {
     gap: 24px;
     justify-content: space-between;
     background-color: #33C37E;
@@ -59,14 +63,14 @@
     height: auto;
 }
 
-.analytics__blocks {
+.analytics__column {
     display: flex;
     flex-direction: column;
     gap: 24px;
     background-color: #33C37E;
 }
 
-.analytics__block-book {
+.row__block {
     width: 340px;
     aspect-ratio: 350/480;
     display: flex;
@@ -76,16 +80,7 @@
     padding: 24px;
 }
 
-.analytics__block-comp {
-    width: 760px;
-    aspect-ratio: 760/230;
-    display: flex;
-    justify-content: center;
-    padding: 24px;
-    align-items: center;
-}
-
-.analytics__block-head {
+.column__block {
     width: 760px;
     aspect-ratio: 760/230;
     display: flex;
@@ -115,29 +110,20 @@
 
 
 @media (max-width: 770px) {
-    .analytics__block {
+    .analytics__row {
         flex-direction: column;
         max-width: 100%;
         justify-content: center;
         align-items: center;
     }
 
-    .analytics__block-comp {
+    .column__block {
         flex-direction: column;
         width: 340px;
         gap: 25px;
         padding: 24px;
         aspect-ratio: 350/480;
     }
-
-    .analytics__block-head {
-        width: 340px;
-        aspect-ratio: 350/480;
-        gap: 32px;
-        padding: 24px;
-        flex-direction: column;
-    }
-
 
     .analytics__conteiner {
         padding: 15px;
@@ -153,6 +139,42 @@
         font-weight: 400;
     }
 
-    
 
+
+}
+
+@media (max-width: 990px) {
+    .analytics__row {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analytics__column {
+        width: 100%;
+    }
+
+    .column__block {
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+        padding: 24px;
+        height: 480px;
+    }
+
+    .analytics__conteiner {
+        padding: 15px;
+    }
+
+    .row__block {
+        width: 100%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 25px;
+        padding: 24px;
+    }
 }

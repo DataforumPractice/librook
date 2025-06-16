@@ -1,6 +1,6 @@
 [class*="__cloud"] {
     width: 100%;
-    
+
     position: absolute;
     max-width: 610px;
     aspect-ratio: 612/232;
@@ -15,21 +15,28 @@
     background-image: url(../../img/cloud_main.svg);
 }
 
-.pencil__cloud{
-    top: 950px;
-    left: -300px;
+.pencil__cloud {
+    top: -10px;
+    left: -350px;
     background-image: url(../../img/cloud_pencil.svg);
 }
 
-.swiper__cloud{
-    top: 3150px;
+.swiper__cloud {
+    top: 1300px;
     left: -350px;
     background-image: url(../../img/cloud__swiper.svg);
 }
 
 @media (max-width: 770px) {
     [class*="__cloud"] {
-    display: none;
+        display: none;
+    }
+
 }
+
+@media (max-width: 990px) {
+    [class*="__cloud"] {
+        display: none;
+    }
 
 }

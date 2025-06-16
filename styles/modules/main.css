@@ -33,7 +33,14 @@
 
 @media (max-width: 770px) {
     .main__content {
-    flex-direction: column-reverse;
-    padding: 24px;
+        flex-direction: column-reverse;
+        padding: 24px;
+    }
 }
+
+@media (max-width: 990px) {
+    .main__content {
+        flex-direction: column-reverse;
+        padding: 24px;
+    }
 }

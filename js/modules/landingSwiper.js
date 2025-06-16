@@ -13,11 +13,9 @@ export const swiper = new Swiper('.swiper', {
 
     on: {
         init: function () {
-            addHoverListeners(this);
         },
         resize: function () {
             updateOffsets(this);
-            addHoverListeners(this);
         }
     }
 });

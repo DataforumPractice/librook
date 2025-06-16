@@ -168,21 +168,21 @@
         <section class="analytics">
             <div class="analytics__conteiner">
                 <h2 class="analytics__title-main title">Elementos de oficio diario</h2>
-                <div class="analytics__row row">
-                    <div class="row__block">
+                <div class="analytics__block">
+                    <div class="analytics__block-book">
                         <div class="analytics__image-book"></div>
                         <h4 class="analytics__title title">Among sex are leave law built now</h4>
                         <p class="analytics__text text">
                             We so opinion friends me message as delight. Whole front do of plate heard oh ought.
                         </p>
                     </div>
-                    <div class="analytics__column">
-                        <div class="column__block">
+                    <div class="analytics__blocks">
+                        <div class="analytics__block-comp">
                             <div class="analytics__image-comp"></div>
                             <h4 class="analytics__title title">Merits behind on afraid or warmly</h4>
                             <button class="analytics__button button">Ver Colección</button>
                         </div>
-                        <div class="column__block">
+                        <div class="analytics__block-head">
                             <div class="analytics__image-head"></div>
                             <h4 class="analytics__title title"> On afraid or warmly merits behind</h4>
                             <button class="analytics__button button">Ver Colección</button>
