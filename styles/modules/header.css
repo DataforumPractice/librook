@@ -2,7 +2,7 @@
     background-color: #9A7AFF;
     color: white;
     display: flex;
-    padding-top: 2rem;
+    padding-top: 53px;
     width: 100%;
 
 }
@@ -13,32 +13,51 @@
 }
 
 .header__logo {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     font-family: Rowdies;
 }
 
-.header__navigation-list {
+.header__nav {
     display: flex;
-    gap: 1rem;
-
+    gap: 32px;
+    align-items: center;
 }
 
-.header__navigation-item {
-
+.nav__item {
     color: white;
     font-weight: 500;
     transition: color 0.3s ease;
+    position: relative;
+
+    
+}
+
+.nav__item.--dropdown{
+    margin-right: 19px;
+    &::after {
+        content: "";
+        width: 20px;
+        aspect-ratio: 70/38;
+        background-image: url(../../img/drop.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: calc(50% - (20px * 38 / 70 / 2));
+        right: -24px;
+        
+    }
 }
 
 @media (max-width: 770px) {
-    .header__navigation-list {
+    .header__nav {
         gap: 5px;
 
     }
 
-    .header__navigation-item {
+    .nav__item {
         font-size: 14px;
     }
 }

@@ -1,25 +1,20 @@
-.analytics__image-book {
+.card__image.--book{
     background-image: url(../../img/book.png);
     width: 100%;
     max-width: 300px;
     aspect-ratio: 300/170;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
-.analytics__image-comp {
+.card__image.--comp{
     background-image: url(../../img/comp.png);
-    width: 100%;
-    max-width: 235px;
-    aspect-ratio: 235/165;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.analytics__image-head {
+.card__image.--head {
     background-image: url(../../img/headphone.png);
+}
+
+.card__image{
     width: 100%;
     max-width: 235px;
     aspect-ratio: 235/165;
@@ -47,8 +42,11 @@
 
 
 
-[class*="__block"] {
+.card {
     background-color: #fff;
+    padding: 32px 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .row{
@@ -58,52 +56,51 @@
 .analytics__row {
     gap: 24px;
     justify-content: space-between;
+    align-items: stretch;
     background-color: #33C37E;
-    width: 1130px;
+    width: 100%;
     height: auto;
 }
 
 .analytics__column {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
     gap: 24px;
     background-color: #33C37E;
 }
 
-.row__block {
-    width: 340px;
-    aspect-ratio: 350/480;
+.analytics__card.--single {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: start;
     gap: 25px;
-    padding: 24px;
+    max-width: 350px;
+    width: 100%;
 }
 
-.column__block {
-    width: 760px;
-    aspect-ratio: 760/230;
+.analytics__card {
     display: flex;
     justify-content: center;
     padding: 24px;
     align-items: center;
 }
 
-.analytics__title {
+.card__title {
     font-size: 22px;
     font-weight: 800;
     font-family: Manrope;
     color: #000;
 }
 
-.analytics__text {
+.card__text {
     font-size: 15px;
     font-weight: 400;
     font-family: Manrope;
     color: black;
 }
 
-.analytics__button {
+.card__button {
     min-width: 169px;
     height: 72px;
 }
@@ -117,7 +114,7 @@
         align-items: center;
     }
 
-    .column__block {
+    .analytics__card {
         flex-direction: column;
         width: 340px;
         gap: 25px;
@@ -129,12 +126,12 @@
         padding: 15px;
     }
 
-    .analytics__title {
+    .card__title {
         font-size: 20px;
         font-weight: 800;
     }
 
-    .analytics__text {
+    .card__text {
         font-size: 15px;
         font-weight: 400;
     }
@@ -151,11 +148,15 @@
         align-items: center;
     }
 
+    .card.--single {
+        max-width: 100%;
+    }
+
     .analytics__column {
         width: 100%;
     }
 
-    .column__block {
+    .analytics__card {
         flex-direction: column;
         width: 100%;
         gap: 25px;
@@ -167,7 +168,7 @@
         padding: 15px;
     }
 
-    .row__block {
+    .analytics__card.--single {
         width: 100%;
         height: 480px;
         display: flex;
